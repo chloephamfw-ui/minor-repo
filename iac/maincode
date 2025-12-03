@@ -1,0 +1,14 @@
+# 🗓 Release Notes — v2.1.0
+
+## 🔧 New Enhancements
+- Improved search performance (up to 40% faster)
+- Compact UI mode for low-resolution screens
+- Multi-step onboarding redesigned for clarity
+
+## 🐞 Fixes
+- Fixed login redirect loop when switching workspaces
+- Corrected data sync issue in offline mode
+- Resolved UI overlap in dashboard widgets
+
+## 📣 Known Limitations
+- Exporting reports in Safari may trigger blank pages
