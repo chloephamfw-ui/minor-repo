@@ -1,0 +1,14 @@
+{
+  "name": "vulnerable-demo-project",
+  "version": "1.0.0",
+  "description": "A demo package.json containing a known vulnerable dependency for testing security scanners.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "lodash": "4.17.19"
+  },
+  "devDependencies": {}
+}
