@@ -1,0 +1,54 @@
+# This file specifies code owners for different parts of the repository.
+# When a pull request modifies files that match a pattern, the owners listed
+# are automatically requested as reviewers.
+
+# ==============================
+# 1. GLOBAL OWNERSHIP & FALLBACK
+# ==============================
+
+# Default owner for everything not matched by a more specific pattern below.
+* @org/default-reviewers
+
+# Ensure the core maintainers team reviews all changes to the root configuration.
+/       @core-maintainers
+
+# ==============================
+# 2. APPLICATION LAYERS
+# ==============================
+
+# Frontend (React/Vue/Angular) - Owned by the frontend team
+/src/frontend/       @org/frontend-squad
+
+# Backend API Services - Owned by a specific backend group
+/src/services/api/   @api-platform-team
+
+# Database Migrations and Schema - Owned by the data team
+/migrations/         @database-admins
+/schema/             @database-admins
+
+# Serverless Functions (e.g., AWS Lambda, Azure Functions)
+/functions/          @serverless-eng-team
+
+# ==============================
+# 3. SPECIFIC MODULES & COMPONENTS
+# ==============================
+
+# Critical Authentication Module - Needs review from Security and Auth expert
+/src/security/auth.js      @security-lead @jane-smith
+
+# The Payment Processing directory requires an explicit email review
+/src/finance/payments/     payments-review@company.com
+
+# Configuration files must be reviewed by the Infrastructure team
+/config/                   @infrastructure-ops
+
+# ==============================
+# 4. DOCUMENTATION & TOOLS
+# ==============================
+
+# Documentation changes (e.g., in a 'docs' folder)
+/docs/* @tech-writers
+
+# Changes to CI/CD pipelines (e.g., .github/workflows or .travis.yml)
+/.github/workflows/        @org/devops-automation
+/.travis.yml               @org/devops-automation
